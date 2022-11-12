@@ -1,7 +1,7 @@
-import React from 'react';
 import logo from "../../logo.png";
-import {Loader} from "../../components/Loader/Loader";
 import styles from './WelcomePage.module.css';
+import {Loader} from "../../components/Loader/Loader";
+import {Button, ButtonVariant} from "../../components/Button/Button";
 
 export const WelcomePage = () => {
   return (
@@ -12,7 +12,15 @@ export const WelcomePage = () => {
       </header>
       <main className={styles.appMain}>
         <div><Loader/></div>
-        <div><button>123</button></div>
+        <div>
+          <Button variant={ButtonVariant.OUTLINE}>Test button</Button>
+        </div>
+        <div>
+          <Button variant={ButtonVariant.CLEAR}>Test button</Button>
+        </div>
+        <div>
+          <Button variant={ButtonVariant.BACKGROUND}>Test button</Button>
+        </div>
       </main>
     </div>
   );

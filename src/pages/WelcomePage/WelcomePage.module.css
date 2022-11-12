@@ -21,8 +21,8 @@
 .appMain {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
     margin-top: 10vh;
 }
